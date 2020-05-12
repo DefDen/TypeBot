@@ -43,7 +43,7 @@ public class TypeBot
 		JPanel panel = new JPanel();
 		panel.add(text);
 		window.add(panel);
-		window.setSize(300, 100);
+		window.setSize(250, 68);
 	}
 
 	private void writeString(String s)
@@ -55,7 +55,7 @@ public class TypeBot
 			robot.delay(1000);
 			for (int i = 0; i < s.length(); i++)
 			{
-				robot.delay(50);
+				robot.delay(1);
 				char c = s.charAt(i);
 				switch(c)
 				{
