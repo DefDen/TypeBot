@@ -14,6 +14,7 @@ public class TypeBot
 
 	public static void main(String[] args)
 	{
+		@SuppressWarnings("unused")
 		TypeBot TB = new TypeBot();
 	}
 
@@ -69,6 +70,11 @@ public class TypeBot
 					case '.':
 						robot.keyPress(KeyEvent.VK_PERIOD);
 						robot.keyRelease(KeyEvent.VK_PERIOD);
+						break;
+
+					case '*':
+						robot.keyPress(KeyEvent.VK_ENTER);
+						robot.keyRelease(KeyEvent.VK_ENTER);
 						break;
 
 					default:
